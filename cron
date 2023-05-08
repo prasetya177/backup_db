@@ -1,0 +1,1 @@
+46 8 * * * sh /home/devops/icare.sh >> /home/devops/database/i_care/backup.log
