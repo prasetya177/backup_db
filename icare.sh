@@ -35,5 +35,5 @@ case $DAYOFWEEK in
 esac
 serverPath=$serverPath-$namafile-$hari.sql
 #command=$(scp_icare "$hari")  && echo $namafile-$hari SUKSES backup di : $(date)   || echo $namafile-$hari GAGAL : $(date)
-command=$(scp -P 9014 sabaindomedika@192.168.7.213:/home/sabaindomedika/Documents/tuah/saba_dump/saba-dump-"$hari".sql /home/devops/database/i_care/icare-production.sql)  && echo $namafile-$hari SUKSES backup di : $(date)   || echo $namafile-$hari GAGAL : $(date)
+command=$(scp -P 3306 root@192.xxx.x.xxx:/home/sabaindomedika/Documents/tuah/saba_dump/saba-dump-"$hari".sql /home/devops/database/i_care/icare-production.sql)  && echo $namafile-$hari SUKSES backup di : $(date)   || echo $namafile-$hari GAGAL : $(date)
 #scp_icare $hari
